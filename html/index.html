@@ -7,14 +7,13 @@
         <script src="libs/jquery.js"></script>
         <script src="libs/d3.min.js"></script>
         <script src="libs/plottable.js"></script>
+        <script src="libs/lodash.js"></script>
         <script src="scripts.js"></script>
     </head>
     <body ng-app="gatherApp">
-        <svg id="testplot" width="800" height="300"></svg>
         <div ng-controller="MainCtrl">
-            <div ng-repeat="d in data">
-                {{d}}
-            </div>
+            <svg id="testplot" width="800" height="300"></svg><BR>
+            Bucket Size:<input ng-model="bucketSize"></input><BR>
         </div>
     </body>
 </html>

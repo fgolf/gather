@@ -1,0 +1,1 @@
+fswatch -e .*js -0 html/ | xargs -0 -n1 -I{} ./makeCoffeescript.sh 

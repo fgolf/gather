@@ -1,3 +1,4 @@
+echo "Build Coffeescript"
 echo "" > html/scripts.js
 for i in $( ls html/*.coffee ); do
 	echo "" >> html/scripts.js
