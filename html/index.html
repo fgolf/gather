@@ -3,8 +3,13 @@
     <head>
         <title>Gather</title>
         <script src="libs/angular.js"></script>
+        <script src="scripts.js"></script>
     </head>
-    <body>
-        Hello!
+    <body ng-app="gatherApp">
+        <div ng-controller="MainCtrl">
+            <div ng-repeat="d in data">
+                {{d}}
+            </div>
+        </div>
     </body>
 </html>
